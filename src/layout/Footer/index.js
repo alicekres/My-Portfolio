@@ -2,8 +2,8 @@ import React from 'react';
 
 import styles from './index.module.css';
 
-const About = () => {
-    return <>About page</>;
+const Footer = () => {
+    return <>Footer</>;
 };
 
-export default About;
+export default Footer;
