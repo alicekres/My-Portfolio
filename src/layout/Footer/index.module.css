@@ -1,0 +1,26 @@
+.email {
+    text-align: center;
+    margin: 30px auto 25px;
+    padding: 5px;
+}
+
+.email a {
+    text-decoration: none;
+    color: #5b2153;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.socialLinks {
+    text-align: center;
+    padding: 4px;
+    margin: 5px auto 25px;
+}
+
+.github {
+    margin: 10px;
+}
+
+.linkedin {
+    margin: 10px;
+}

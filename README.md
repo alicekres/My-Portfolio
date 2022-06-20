@@ -1,4 +1,6 @@
 color: rgb(64, 0, 64);
+#ffaa55
+#5b2153
 
 # Getting Started with Create React App
 
