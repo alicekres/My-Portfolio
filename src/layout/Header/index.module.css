@@ -56,6 +56,7 @@ nav {
 .li {
     display: inline-block;
     padding: 16px 40px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 li:hover {
@@ -78,6 +79,9 @@ li:hover {
     cursor: pointer;
     color: #fff;
     display: none;
+}
+
+.font-link {
 }
 /* .content {
     width: 94%;
