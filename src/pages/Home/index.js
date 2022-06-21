@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProfilePicture } from '../../components';
+import { ProfilePicture, VideoButton } from '../../components';
 
 import styles from './index.module.css';
 
@@ -13,6 +13,7 @@ const Home = () => {
                     Kingdom
                 </p>
                 <ProfilePicture />
+                <VideoButton />
             </main>
         </>
     );
