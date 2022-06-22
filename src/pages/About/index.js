@@ -6,9 +6,10 @@ import styles from './index.module.css';
 const About = () => {
     return (
         <>
-            About page
-            <AboutPicture />
-            <AboutSection />
+            <section className={styles.section}>
+                <AboutPicture />
+                <AboutSection />
+            </section>
         </>
     );
 };
