@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { HamburgerMenu } from '../../components';
+import { HamburgerCross } from '../../components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,15 +9,22 @@ import styles from './index.module.css';
 import logo from '../../assets/images/logo.png';
 
 const Header = () => {
+    const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+    const toggleHamburgerMenu = () => {
+        setHamburgerMenu((prevStatus) => !prevStatus);
+    };
+
+    const closeHamburgerMenuHandler = () => {
+        setHamburgerMenu((prevStatus) => !prevStatus);
+    };
+
     return (
         <header className={styles.header}>
+            <div className={styles.logo}>
+                <img src={logo} alt="logo" className={styles.image} />
+            </div>
             <nav className={styles.nav}>
-                <div className={styles.menuicon}>
-                    <i className="fa fa-bars fa-2x"></i>
-                </div>
-                <div className={styles.logo}>
-                    <img src={logo} alt="logo" />
-                </div>
                 <ul className={styles.ul}>
                     <li className={styles.li}>
                         <NavLink to="/">HOME</NavLink>
@@ -31,14 +39,10 @@ const Header = () => {
                         <NavLink to="/contact">CONTACT</NavLink>
                     </li>
                 </ul>
-                <div className={styles.hamburgerWrapper}>
-                    <GiHamburgerMenu
-                        className={styles.hamburgerMenu}
-                        color="#5b2153"
-                        size={25}
-                    />
-                </div>
             </nav>
+            <button onClick={toggleHamburgerMenu} className={styles.hamburger}>
+                {hamburgerMenu ? <HamburgerCross /> : <HamburgerMenu />}
+            </button>
         </header>
     );
 };
