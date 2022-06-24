@@ -39,6 +39,13 @@ const AboutSection = () => {
                     collaboration and solving and/or trying to avoid merging
                     conflicts in Github.
                 </p>
+
+                <p>
+                    I'm looking forward to working in a friendly atmosphere
+                    where growing and challenges are part of everyday life and
+                    where I can contribute with my knowledge that I have
+                    aquired.
+                </p>
             </div>
         </>
     );

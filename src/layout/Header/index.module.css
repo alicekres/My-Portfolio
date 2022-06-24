@@ -80,3 +80,55 @@ li:hover {
     color: #fff;
     display: none;
 }
+
+.toggleButton {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggleButton .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.hamburgerWrapper {
+    display: none;
+}
+
+/* .hamburgerMenu {
+    display: none;
+} */
+
+@media (max-width: 1280px) {
+    header .logo img {
+        width: 80px;
+        margin: 28px 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        background-position: left top;
+        background-size: auto;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .hamburgerWrapper {
+        display: flex;
+        justify-content: end;
+    }
+    /* .hamburgerMenu {
+        display: flex;
+    } */
+}

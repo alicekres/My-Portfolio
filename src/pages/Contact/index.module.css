@@ -1,10 +1,77 @@
-.h1 {
+.main {
+    font-family: 'Nunito Sans', sans-serif;
     text-align: center;
+    color: #5b2153;
+    padding: 10px;
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.7)
+        ),
+        url('../../assets/images/golden-background.jpg');
+    background-size: cover;
+    background-position: center top -100px;
 }
 
-.image {
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+.heading {
+    margin: 50px auto 50px;
+    font-size: 70px;
+    letter-spacing: 0.05em;
+}
+
+.description {
+    font-size: 24px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.a {
+    text-decoration: none;
+    color: #5b2153;
+}
+
+.a:hover {
+    color: #5b2153;
+}
+
+.desktopLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.unit {
+    padding: 20px;
+    width: 400px;
+}
+
+.github {
+    margin-top: 12px;
+}
+
+@media (max-width: 1280px) {
+    .heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .desktopLayout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .unit {
+        padding: 10px;
+        width: 400px;
+    }
+    .main {
+        background-position: left top -100px;
+        background-size: auto;
+    }
+    .heading {
+        font-size: 40px;
+    }
 }

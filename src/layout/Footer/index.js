@@ -2,14 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 
-import icon50 from '../../assets/images/icon50.png';
-import linkedin50 from '../../assets/images/linkedin50.png';
-
 import styles from './index.module.css';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <div className={styles.email}>
                 <a href="mailto:alice.kreslins@gmail.com">
                     alice.kreslins@gmail.com

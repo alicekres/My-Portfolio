@@ -23,9 +23,21 @@
     margin: 20px;
     padding: 5px;
 }
-/* h1 {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
+
+@media (max-width: 1000px) {
+    .main {
+        background-position: left top -100px;
+        background-size: auto;
+    }
+
+    .description {
+        font-size: 20px;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .h1 {
+        font-size: 50px;
+        letter-spacing: 0.05em;
+    }
+}
