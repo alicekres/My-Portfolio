@@ -8,7 +8,7 @@ import styles from './index.module.css';
 const Contact = () => {
     return (
         <>
-            <main className={styles.main}>
+            <main className={`${styles.main} main`}>
                 <h2 className={styles.heading}>Let's get in touch!</h2>
                 <div className={styles.description}>
                     <div className={styles.desktopLayout}>

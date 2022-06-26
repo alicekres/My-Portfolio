@@ -6,7 +6,7 @@ const Portfolio = () => {
     return (
         <>
             {' '}
-            <div className={styles.construction}>
+            <main className={`main`}>
                 <h1 className={styles.h1}>
                     Hi, at the moment this website is under construction!
                 </h1>
@@ -15,7 +15,7 @@ const Portfolio = () => {
                     alt="under construction"
                     className={styles.image}
                 />
-            </div>
+            </main>
         </>
     );
 };

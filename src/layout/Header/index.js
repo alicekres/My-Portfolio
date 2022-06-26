@@ -22,24 +22,65 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <img src={logo} alt="logo" className={styles.image} />
+                <NavLink to="/">
+                    <img src={logo} alt="logo" className={styles.image} />
+                </NavLink>
             </div>
-            <nav className={styles.nav}>
-                <ul className={styles.ul}>
-                    <li className={styles.li}>
-                        <NavLink to="/">HOME</NavLink>
-                    </li>
-                    <li className={styles.li}>
-                        <NavLink to="/portfolio">PORTFOLIO</NavLink>
-                    </li>
-                    <li className={styles.li}>
-                        <NavLink to="/about">ABOUT</NavLink>
-                    </li>
-                    <li className={styles.li}>
-                        <NavLink to="/contact">CONTACT</NavLink>
-                    </li>
-                </ul>
-            </nav>
+            {hamburgerMenu ? (
+                <nav className={styles.hamburgerItems}>
+                    <ul className={styles.hamburgerul}>
+                        <li
+                            className={styles.hamburgerli}
+                            onClick={closeHamburgerMenuHandler}
+                        >
+                            <NavLink to="/" className={styles.navlink}>
+                                HOME
+                            </NavLink>
+                        </li>
+                        <li
+                            className={styles.hamburgerli}
+                            onClick={closeHamburgerMenuHandler}
+                        >
+                            <NavLink to="/portfolio" className={styles.navlink}>
+                                PORTFOLIO
+                            </NavLink>
+                        </li>
+                        <li
+                            className={styles.hamburgerli}
+                            onClick={closeHamburgerMenuHandler}
+                        >
+                            <NavLink to="/about" className={styles.navlink}>
+                                ABOUT
+                            </NavLink>
+                        </li>
+                        <li
+                            className={styles.hamburgerli}
+                            onClick={closeHamburgerMenuHandler}
+                        >
+                            <NavLink to="/contact" className={styles.navlink}>
+                                CONTACT
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            ) : (
+                <nav className={styles.nav}>
+                    <ul className={styles.ul}>
+                        <li className={styles.li}>
+                            <NavLink to="/">HOME</NavLink>
+                        </li>
+                        <li className={styles.li}>
+                            <NavLink to="/portfolio">PORTFOLIO</NavLink>
+                        </li>
+                        <li className={styles.li}>
+                            <NavLink to="/about">ABOUT</NavLink>
+                        </li>
+                        <li className={styles.li}>
+                            <NavLink to="/contact">CONTACT</NavLink>
+                        </li>
+                    </ul>
+                </nav>
+            )}
             <button onClick={toggleHamburgerMenu} className={styles.hamburger}>
                 {hamburgerMenu ? <HamburgerCross /> : <HamburgerMenu />}
             </button>

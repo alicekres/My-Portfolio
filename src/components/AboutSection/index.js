@@ -6,11 +6,6 @@ const AboutSection = () => {
     return (
         <>
             <div className={styles.text}>
-                <h2>Hi! I'm Alice Kreslins</h2>
-                <p>
-                    At the moment I'm a tech trainee at futureproof and live in
-                    small peaceful town in south-west of England.
-                </p>
                 <p>
                     I was born and raised in Estonia. As I loved to take care of
                     people and bring them joy - I decided to study nursing.

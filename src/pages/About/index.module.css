@@ -1,3 +1,18 @@
+main.main {
+    color: #5b2153;
+    background-color: rgb(251, 221, 164);
+}
+
+.description {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.activity {
+    margin: 20px;
+}
+
 .section {
     display: flex;
     flex-direction: row;

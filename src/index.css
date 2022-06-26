@@ -12,6 +12,11 @@ code {
         monospace;
 }
 
+@media (max-width: 860px) {
+    main.main {
+        padding-top: 140px;
+    }
+}
 /* .font-link {
     font-family: 'Nunito Sans', sans-serif;
 } */
