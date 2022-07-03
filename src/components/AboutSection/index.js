@@ -47,10 +47,9 @@ const AboutSection = () => {
                 </p>
 
                 <p>
-                    I'm looking forward to working in a friendly atmosphere
-                    where growing and challenges are part of everyday life and
-                    where I can contribute with my knowledge that I have
-                    aquired.
+                    I'm looking forward to working in a friendly team where I
+                    can tackle challenging tasks and grow while at the same time
+                    contributing with the knowledge that I have aquired.
                 </p>
             </div>
         </>

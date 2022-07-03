@@ -16,3 +16,14 @@ main.main {
     display: flex;
     flex-direction: row;
 }
+
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .description {
+        max-width: 900px;
+        margin: 40px 120px 0;
+    }
+}
