@@ -7,7 +7,7 @@ const AboutSection = () => {
         <>
             <div className={styles.text}>
                 <p>
-                    I was born and raised in Estonia. As I loved to take care of
+                    I was born and raised in Estonia. As I love to take care of
                     people and bring them joy - I decided to study nursing.
                     After finishing studies I moved to England where I worked as
                     a nurse for a little while.

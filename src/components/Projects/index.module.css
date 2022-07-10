@@ -1,6 +1,8 @@
 .projects {
-    background-color: #fffef9;
-    display: flex;
+    /* background-color: #fffef9; */
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 30px 130px 0; */
+    margin: 30px auto;
 }
